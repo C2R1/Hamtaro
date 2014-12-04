@@ -18,12 +18,39 @@ int ledJaune = 10;  // led jaune en sortie 10
 
 String rep;  // L'element de repoonse au passage de la carte
 
+// RFID functions:
+void clearBufferArray()              // function to clear buffer array
+{
+  for (int i=0; i<count;i++)
+  { 
+    buffer[i]=NULL;
+  }                  // clear all index of array with command NULL
+}
+
+String GetInfo(unsigned char buff[14], int count)
+{
+  // remove stx checksum and etx and get name;
+  String value = GetString(buff).substring(1,11); 
+  String temp = GetData(value);
+  return temp;
+  //sd_card_write(temp + " » " +digitalClockDisplay());
+}
+
+String GetString(unsigned char* inStrReference)
+{
+  // convert unsigned char to string
+  unsigned char* bufPtr = inStrReference; 
+  String newstring = (char*)bufPtr;
+  return newstring;
+}
+
 void setup()
 {
   // debutr de la communication série
   Serial.begin(9600);
   // start rfid:
   rfid.begin(9600);  
+  Serial.write("hello world");
 }
 
 unsigned char buff[64];
@@ -80,32 +107,5 @@ void loop()
       clearBufferArray();
       count = 0;
     }       
-}
-
-
-// RFID functions:
-void clearBufferArray()              // function to clear buffer array
-{
-  for (int i=0; i<count;i++)
-  { 
-    buffer[i]=NULL;
-  }                  // clear all index of array with command NULL
-}
-
-String GetInfo(unsigned char buff[14], int count)
-{
-  // remove stx checksum and etx and get name;
-  String value = GetString(buff).substring(1,11); 
-  String temp = GetData(value);
-  return temp;
-  //sd_card_write(temp + " » " +digitalClockDisplay());
-}
-
-String GetString(unsigned char* inStrReference)
-{
-  // convert unsigned char to string
-  unsigned char* bufPtr = inStrReference; 
-  String newstring = (char*)bufPtr;
-  return newstring;
 }
 

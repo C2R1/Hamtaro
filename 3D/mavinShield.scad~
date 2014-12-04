@@ -4,8 +4,10 @@ $fn=100;
 
 include <mavin.scad>
 
-mavin();
-mavinShield();
+//mavin();
+//mavinShield();
+
+ShieldRight();
 
 module squareTriangle(x,y,z)
 {
@@ -29,12 +31,12 @@ module quartdecerclecourbe(r1, r2, h)
 
 module mavinShield()
 {
-    translate([0,0,8+9])
+    translate([19,0,8+9])
     {
         translate([0,-35,0])
         ShieldLeft();
         translate([0,35,0])
-        !ShieldRight();
+        ShieldRight();
     }
 }
 
@@ -50,27 +52,28 @@ module ShieldRight()
     {
         union()
         {
-            cube([102,15,5]);
-            translate([18,0,0])
+            cube([85,15,5]);
+            translate([0,0,0])
             rotate([-90,0,0])
             difference()
             {
-                cylinder(r=20, h=15);
+                cylinder(r=21, h=15);
                 translate([-21,1,-1])
                 cube([42,21,17]);
             }
         }
-        translate([18,0,-1]) rotate([-90,0,0]) translate([0,0,-1]) cylinder(r=19, h=15);
-        translate([42,2,-1]) squareTriangle(60,11,7);
-        translate([128,16,-1]) mirror([0,1,0]) mirror([1,0,0]) squareTriangle(93,17,7);
-        translate([40,7,-1])
-        cylinder(r=1, h=7);
+        translate([0,0,-1]) rotate([-90,0,0]) translate([0,0,-1]) cylinder(r=20, h=15);
+        translate([110,16,-1]) mirror([0,1,0]) mirror([1,0,0]) squareTriangle(93,17,7);
+        translate([22,7,-1]) cylinder(r=1, h=7);
+        translate([40,7,-1]) cylinder(r=1, h=7);
+        translate([55,2.5,-1]) cylinder(r=1, h=7);
+        translate([75,2.5,-1]) cylinder(r=1, h=7);
     }
-    translate([100,-16,0])
-    quartdecerclecourbe(r1=20, r2=16,h=5);
-    translate([116,-16-19,0])
+    translate([81,-14,0])
+    quartdecerclecourbe(r1=18, r2=14,h=5);
+    translate([95,-14-22,0])
     {
-        cube([4,19,5]);
+        cube([4,22,5]);
         translate([0,0,-4])
         difference()
         {
@@ -83,6 +86,31 @@ module ShieldRight()
                 cylinder(r=1, h=4);
             }
         }
+    }
+    translate([-24,-36,-1])
+    {
+        cube([4,51,5]);
+        translate([0,0,-4])
+        difference()
+        {
+            cube([4,2,13]);
+            translate([2,-1,11])
+            rotate([-90,0,0])
+            {
+                cylinder(r=1, h=4);
+                translate([0,9,0])
+                cylinder(r=1, h=4);
+            }
+        }
+    }
+    //attaches
+    translate([39,0,1.61])
+    {
+        rotate([90,0,0])
+        cylinder(r=1.75, h=6);
+        translate([40,0,0])
+        rotate([90,0,0])
+        cylinder(r=1.75, h=6);
     }
 }
 
