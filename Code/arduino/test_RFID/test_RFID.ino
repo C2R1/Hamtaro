@@ -1,4 +1,7 @@
 #include <SoftwareSerial.h>
+
+//blanc = 2, jaune = 3
+
 SoftwareSerial rfid(2, 3);
 unsigned char buffer[14];
 int count=0;
