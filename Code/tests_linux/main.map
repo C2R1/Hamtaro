@@ -1,0 +1,819 @@
+Archive member included because of file (symbol)
+
+/usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o (exit)
+/usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+                              main.o (__do_copy_data)
+/usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_clear_bss.o)
+                              main.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+MultiCommData       0x1               main.o
+DownwardPhotoSensor
+                    0x1               main.o
+IR_TX_PIN           0x1               main.o
+m_nPos_Speaker      0x1               main.o
+RCommCnt            0x1               main.o
+m_bMelodyEnd        0x1               main.o
+RobotComState       0x1               main.o
+EepMelAddr          0x1               main.o
+ir_data             0x4               main.o
+SensorDir           0x1               main.o
+string2             0x8               main.o
+nSensorVal          0x1               main.o
+fMicSample          0x1               main.o
+ir_trans_temp       0x4               main.o
+pM_refrash          0x2               main.o
+pK_refrash          0x2               main.o
+tempCounter         0x2               main.o
+IR_RX_PIN           0x1               main.o
+Mel                 0x2               main.o
+ForwardPhotoSensor  0x1               main.o
+delay_count         0x2               main.o
+T_count             0x1               main.o
+MelodyRegister      0x1               main.o
+delay32us           0x2               main.o
+PinniCmd            0x1               main.o
+AD_Value            0x1               main.o
+SubTimeValue        0x1               main.o
+string1             0x8               main.o
+IrKeyValue          0xf               main.o
+ADCComplete         0x1               main.o
+Eep_Mel             0x21              main.o
+fcdsSample          0x1               main.o
+OvfCount            0x1               main.o
+delayms_count       0x2               main.o
+PhotoSensor         0x1               main.o
+InfSenValue         0x1               main.o
+pM_                 0x2               main.o
+TempExCustom        0x1               main.o
+Eep_Kon             0x21              main.o
+ADCData             0x2               main.o
+Kong_ovf_count      0x1               main.o
+pK_                 0x2               main.o
+IDmemory            0x1               main.o
+Kon                 0x2               main.o
+fSpeakerOut         0x1               main.o
+KongCount           0x1               main.o
+T_data              0x1               main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000020000 xr
+data             0x0000000000800060 0x000000000000ffa0 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000400 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+LOAD main.o
+LOAD /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libm.a
+LOAD /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a
+LOAD /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a
+LOAD /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000     0x19aa
+ *(.vectors)
+ .vectors       0x0000000000000000       0x8c /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x000000000000008c      0x136 main.o
+                0x000000000000008c                Melody_Tof_count
+                0x00000000000000ae                Melody_Sub_Time
+                0x00000000000000d0                Melody_Kongnamul
+                0x00000000000000da                T1SOL
+                0x00000000000000dc                T1SOLS
+                0x00000000000000de                T1RA
+                0x00000000000000e0                T1RAS
+                0x00000000000000e2                T1SI
+                0x00000000000000e4                T2DO
+                0x00000000000000e6                T2DOS
+                0x00000000000000e8                T2RE
+                0x00000000000000ea                T2RES
+                0x00000000000000ec                T2MI
+                0x00000000000000ee                T2PA
+                0x00000000000000f0                T2PAS
+                0x00000000000000f2                T2SOL
+                0x00000000000000f4                T2SOLS
+                0x00000000000000f6                T2RA
+                0x00000000000000f8                T2RAS
+                0x00000000000000fa                T2SI
+                0x00000000000000fc                T3DO
+                0x00000000000000fe                T3DOS
+                0x0000000000000100                T3RE
+                0x0000000000000102                T3RES
+                0x0000000000000104                T3MI
+                0x0000000000000106                T3PA
+                0x0000000000000108                T3PAS
+                0x000000000000010a                T3SOL
+                0x000000000000010c                T3SOLS
+                0x000000000000010e                T3RA
+                0x0000000000000110                T3RAS
+                0x0000000000000112                T3SI
+                0x0000000000000114                T4DO
+                0x0000000000000116                CRES
+                0x0000000000000118                RHYTHM_32
+                0x0000000000000119                RHYTHM_16
+                0x000000000000011a                RHYTHM_8_2
+                0x000000000000011b                RHYTHM_4_2
+                0x000000000000011c                RHYTHM_DOT_4
+                0x000000000000011d                RHYTHM_2_2
+                0x000000000000011e                RHYTHM_DOT_2
+                0x000000000000011f                RHYTHM_DOT_32
+                0x0000000000000120                RHYTHM_DOT_16
+                0x0000000000000121                RHYTHM_DOT_8
+                0x0000000000000122                MELODY_1
+                0x0000000000000130                RHYTHM_EX_1
+                0x000000000000013d                MELODY_2
+                0x000000000000014c                RHYTHM_EX_2
+                0x000000000000015a                MELODY_3
+                0x000000000000015e                RHYTHM_EX_3
+                0x0000000000000161                MELODY_4
+                0x000000000000017b                RHYTHM_EX_4
+                0x0000000000000194                MELODY_5
+                0x0000000000000198                RHYTHM_EX_5
+                0x000000000000019b                MELODY_6
+                0x00000000000001a0                RHYTHM_EX_6
+                0x00000000000001a4                MELODY_7
+                0x00000000000001a8                RHYTHM_EX_7
+                0x00000000000001ab                MELODY_8
+                0x00000000000001b0                RHYTHM_EX_8
+                0x00000000000001b4                MELODY_9
+                0x00000000000001b7                RHYTHM_EX_9
+                0x00000000000001b9                MELODY_10
+                0x00000000000001be                RHYTHM_EX_10
+                0x00000000000001c2                . = ALIGN (0x2)
+                0x00000000000001c2                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000000000001c2        0x0 linker stubs
+ *(.trampolines*)
+                0x00000000000001c2                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000000000001c2                __ctors_start = .
+ *(.ctors)
+                0x00000000000001c2                __ctors_end = .
+                0x00000000000001c2                __dtors_start = .
+ *(.dtors)
+                0x00000000000001c2                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000000000001c2        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+                0x00000000000001c2                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000000000001c2        0xc /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000000000001ce       0x16 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+                0x00000000000001ce                __do_copy_data
+ .init4         0x00000000000001e4       0x10 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_clear_bss.o)
+                0x00000000000001e4                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000000000001f4        0x8 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+ *(.init9)
+ *(.text)
+ .text          0x00000000000001fc        0x4 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+                0x00000000000001fc                __vector_22
+                0x00000000000001fc                __vector_28
+                0x00000000000001fc                __vector_1
+                0x00000000000001fc                __vector_32
+                0x00000000000001fc                __vector_34
+                0x00000000000001fc                __vector_24
+                0x00000000000001fc                __vector_12
+                0x00000000000001fc                __bad_interrupt
+                0x00000000000001fc                __vector_6
+                0x00000000000001fc                __vector_31
+                0x00000000000001fc                __vector_3
+                0x00000000000001fc                __vector_23
+                0x00000000000001fc                __vector_30
+                0x00000000000001fc                __vector_25
+                0x00000000000001fc                __vector_11
+                0x00000000000001fc                __vector_13
+                0x00000000000001fc                __vector_17
+                0x00000000000001fc                __vector_19
+                0x00000000000001fc                __vector_7
+                0x00000000000001fc                __vector_27
+                0x00000000000001fc                __vector_5
+                0x00000000000001fc                __vector_33
+                0x00000000000001fc                __vector_4
+                0x00000000000001fc                __vector_9
+                0x00000000000001fc                __vector_2
+                0x00000000000001fc                __vector_15
+                0x00000000000001fc                __vector_29
+                0x00000000000001fc                __vector_8
+                0x00000000000001fc                __vector_26
+                0x00000000000001fc                __vector_14
+                0x00000000000001fc                __vector_10
+                0x00000000000001fc                __vector_18
+                0x00000000000001fc                __vector_20
+ .text          0x0000000000000200     0x17a6 main.o
+                0x0000000000000200                __vector_21
+                0x000000000000022a                ClkTickFunc
+                0x0000000000000268                REPosition
+                0x00000000000002ae                SetSpeaker
+                0x0000000000000336                DacDigToAlog
+                0x0000000000000490                MelFunc
+                0x00000000000007d6                GetRemocon
+                0x000000000000085a                IrRecv
+                0x0000000000000a3c                IrComm
+                0x0000000000000a5c                DcMotor_temp
+                0x0000000000000b14                isr_pwm
+                0x0000000000000b6c                PhotoSensorUpdate
+                0x0000000000000bbc                __vector_16
+                0x0000000000000caa                delayms
+                0x0000000000000cce                delay_cho
+                0x0000000000000ce8                delay
+                0x0000000000000d14                mSecDelay
+                0x0000000000000d48                lcd_port_init
+                0x0000000000000d58                command
+                0x0000000000000d94                lcd_init
+                0x0000000000000dd2                lcd_out
+                0x0000000000000e10                lcd_position
+                0x0000000000000e24                lcd_char_out
+                0x0000000000000e44                lcd_str_out
+                0x0000000000000e86                lcd_line_clr
+                0x0000000000000ee4                lcd_shift
+                0x0000000000000ef4                Beep
+                0x000000000000101e                InitADC
+                0x000000000000102c                GetADC
+                0x000000000000105a                GetCds
+                0x00000000000010c6                Initialize
+                0x000000000000111a                GetCdsVal
+                0x0000000000001140                GetRemoconVal
+                0x000000000000116a                GetMicVal
+                0x0000000000001190                GetPhotoSensor
+                0x00000000000011b6                TactSWModuleCtrl
+                0x00000000000012e4                TouchSensor
+                0x00000000000013a2                Bulldozer
+                0x00000000000013b6                Buzzer
+                0x0000000000001406                LcdDisplay
+                0x00000000000014ec                DC_Control
+                0x00000000000014f8                LEDModuleCtrl
+                0x00000000000016ea                MelodyPlay
+                0x0000000000001796                Composition
+                0x000000000000181e                fnd_display
+                0x0000000000001994                main
+ .text          0x00000000000019a6        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_exit.o)
+ .text          0x00000000000019a6        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+ .text          0x00000000000019a6        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_clear_bss.o)
+                0x00000000000019a6                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00000000000019a6        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x00000000000019a6        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000000019a6        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_clear_bss.o)
+                0x00000000000019a6                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000000000019a6        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_exit.o)
+                0x00000000000019a6                exit
+                0x00000000000019a6                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000000000019a6        0x4 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000000000019aa                _etext = .
+
+.data           0x0000000000800100       0x3e load address 0x00000000000019aa
+                0x0000000000800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+ .data          0x0000000000800100       0x3e main.o
+                0x000000000080010c                pwm_cycle
+                0x000000000080010d                IRReg
+                0x000000000080010e                ir_tran_data
+                0x0000000000800112                MelVolCtrl
+                0x0000000000800113                number
+                0x0000000000800123                number_fnd
+                0x0000000000800133                empty
+ .data          0x000000000080013e        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_exit.o)
+ .data          0x000000000080013e        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+ .data          0x000000000080013e        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x000000000080013e                . = ALIGN (0x2)
+                0x000000000080013e                _edata = .
+                0x000000000080013e                PROVIDE (__data_end, .)
+
+.bss            0x000000000080013e       0xb2
+                0x000000000080013e                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x000000000080013e        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+ .bss           0x000000000080013e       0x16 main.o
+                0x000000000080013e                ControlPortc
+                0x000000000080013f                cur_pwm
+                0x0000000000800141                org_pwm
+                0x0000000000800143                pwm_cnt
+                0x0000000000800144                OnlyIrCnt
+                0x0000000000800145                RComFlagReg
+                0x0000000000800146                MelImpect
+                0x0000000000800147                RemoconValuedelayCnt
+ .bss           0x0000000000800154        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_exit.o)
+ .bss           0x0000000000800154        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+ .bss           0x0000000000800154        0x0 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0000000000800154       0x9c main.o
+                0x0000000000800154                MultiCommData
+                0x0000000000800155                DownwardPhotoSensor
+                0x0000000000800156                IR_TX_PIN
+                0x0000000000800157                m_nPos_Speaker
+                0x0000000000800158                RCommCnt
+                0x0000000000800159                m_bMelodyEnd
+                0x000000000080015a                RobotComState
+                0x000000000080015b                EepMelAddr
+                0x000000000080015c                ir_data
+                0x0000000000800160                SensorDir
+                0x0000000000800161                string2
+                0x0000000000800169                nSensorVal
+                0x000000000080016a                fMicSample
+                0x000000000080016b                ir_trans_temp
+                0x000000000080016f                pM_refrash
+                0x0000000000800171                pK_refrash
+                0x0000000000800173                tempCounter
+                0x0000000000800175                IR_RX_PIN
+                0x0000000000800176                Mel
+                0x0000000000800178                ForwardPhotoSensor
+                0x0000000000800179                delay_count
+                0x000000000080017b                T_count
+                0x000000000080017c                MelodyRegister
+                0x000000000080017d                delay32us
+                0x000000000080017f                PinniCmd
+                0x0000000000800180                AD_Value
+                0x0000000000800181                SubTimeValue
+                0x0000000000800182                string1
+                0x000000000080018a                IrKeyValue
+                0x0000000000800199                ADCComplete
+                0x000000000080019a                Eep_Mel
+                0x00000000008001bb                fcdsSample
+                0x00000000008001bc                OvfCount
+                0x00000000008001bd                delayms_count
+                0x00000000008001bf                PhotoSensor
+                0x00000000008001c0                InfSenValue
+                0x00000000008001c1                pM_
+                0x00000000008001c3                TempExCustom
+                0x00000000008001c4                Eep_Kon
+                0x00000000008001e5                ADCData
+                0x00000000008001e7                Kong_ovf_count
+                0x00000000008001e8                pK_
+                0x00000000008001ea                IDmemory
+                0x00000000008001eb                Kon
+                0x00000000008001ed                fSpeakerOut
+                0x00000000008001ee                KongCount
+                0x00000000008001ef                T_data
+                0x00000000008001f0                PROVIDE (__bss_end, .)
+                0x00000000000019aa                __data_load_start = LOADADDR (.data)
+                0x00000000000019e8                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00000000008001f0        0x0
+                0x00000000008001f0                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00000000008001f0                PROVIDE (__noinit_end, .)
+                0x00000000008001f0                _end = .
+                0x00000000008001f0                PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x0000000000000000     0x462c
+ *(.stab)
+ .stab          0x0000000000000000      0x6cc /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+ .stab          0x00000000000006cc     0x3f60 main.o
+                                       0x3f6c (size before relaxing)
+
+.stabstr        0x0000000000000000     0x1c0b
+ *(.stabstr)
+ .stabstr       0x0000000000000000     0x1c0b /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(main.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+ADCComplete                                       main.o
+ADCData                                           main.o
+AD_Value                                          main.o
+Beep                                              main.o
+Bulldozer                                         main.o
+Buzzer                                            main.o
+CRES                                              main.o
+ClkTickFunc                                       main.o
+Composition                                       main.o
+ControlPortc                                      main.o
+DC_Control                                        main.o
+DacDigToAlog                                      main.o
+DcMotor_temp                                      main.o
+DownwardPhotoSensor                               main.o
+EepMelAddr                                        main.o
+Eep_Kon                                           main.o
+Eep_Mel                                           main.o
+ForwardPhotoSensor                                main.o
+GetADC                                            main.o
+GetCds                                            main.o
+GetCdsVal                                         main.o
+GetMicVal                                         main.o
+GetPhotoSensor                                    main.o
+GetRemocon                                        main.o
+GetRemoconVal                                     main.o
+IDmemory                                          main.o
+IRReg                                             main.o
+IR_RX_PIN                                         main.o
+IR_TX_PIN                                         main.o
+InfSenValue                                       main.o
+InitADC                                           main.o
+Initialize                                        main.o
+IrComm                                            main.o
+IrKeyValue                                        main.o
+IrRecv                                            main.o
+Kon                                               main.o
+KongCount                                         main.o
+Kong_ovf_count                                    main.o
+LEDModuleCtrl                                     main.o
+LcdDisplay                                        main.o
+MELODY_1                                          main.o
+MELODY_10                                         main.o
+MELODY_2                                          main.o
+MELODY_3                                          main.o
+MELODY_4                                          main.o
+MELODY_5                                          main.o
+MELODY_6                                          main.o
+MELODY_7                                          main.o
+MELODY_8                                          main.o
+MELODY_9                                          main.o
+Mel                                               main.o
+MelFunc                                           main.o
+MelImpect                                         main.o
+MelVolCtrl                                        main.o
+MelodyPlay                                        main.o
+MelodyRegister                                    main.o
+Melody_Kongnamul                                  main.o
+Melody_Sub_Time                                   main.o
+Melody_Tof_count                                  main.o
+MultiCommData                                     main.o
+OnlyIrCnt                                         main.o
+OvfCount                                          main.o
+PhotoSensor                                       main.o
+PhotoSensorUpdate                                 main.o
+PinniCmd                                          main.o
+RComFlagReg                                       main.o
+RCommCnt                                          main.o
+REPosition                                        main.o
+RHYTHM_16                                         main.o
+RHYTHM_2_2                                        main.o
+RHYTHM_32                                         main.o
+RHYTHM_4_2                                        main.o
+RHYTHM_8_2                                        main.o
+RHYTHM_DOT_16                                     main.o
+RHYTHM_DOT_2                                      main.o
+RHYTHM_DOT_32                                     main.o
+RHYTHM_DOT_4                                      main.o
+RHYTHM_DOT_8                                      main.o
+RHYTHM_EX_1                                       main.o
+RHYTHM_EX_10                                      main.o
+RHYTHM_EX_2                                       main.o
+RHYTHM_EX_3                                       main.o
+RHYTHM_EX_4                                       main.o
+RHYTHM_EX_5                                       main.o
+RHYTHM_EX_6                                       main.o
+RHYTHM_EX_7                                       main.o
+RHYTHM_EX_8                                       main.o
+RHYTHM_EX_9                                       main.o
+RemoconValuedelayCnt                              main.o
+RobotComState                                     main.o
+SensorDir                                         main.o
+SetSpeaker                                        main.o
+SubTimeValue                                      main.o
+T1RA                                              main.o
+T1RAS                                             main.o
+T1SI                                              main.o
+T1SOL                                             main.o
+T1SOLS                                            main.o
+T2DO                                              main.o
+T2DOS                                             main.o
+T2MI                                              main.o
+T2PA                                              main.o
+T2PAS                                             main.o
+T2RA                                              main.o
+T2RAS                                             main.o
+T2RE                                              main.o
+T2RES                                             main.o
+T2SI                                              main.o
+T2SOL                                             main.o
+T2SOLS                                            main.o
+T3DO                                              main.o
+T3DOS                                             main.o
+T3MI                                              main.o
+T3PA                                              main.o
+T3PAS                                             main.o
+T3RA                                              main.o
+T3RAS                                             main.o
+T3RE                                              main.o
+T3RES                                             main.o
+T3SI                                              main.o
+T3SOL                                             main.o
+T3SOLS                                            main.o
+T4DO                                              main.o
+T_count                                           main.o
+T_data                                            main.o
+TactSWModuleCtrl                                  main.o
+TempExCustom                                      main.o
+TouchSensor                                       main.o
+__bad_interrupt                                   /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__bss_end                                         /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+__data_start                                      /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+__do_clear_bss                                    /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_clear_bss.o)
+                                                  main.o
+__do_copy_data                                    /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_copy_data.o)
+                                                  main.o
+__heap_end                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__init                                            /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__stack                                           /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_1                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_10                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_11                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_12                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_13                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_14                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_15                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_16                                       main.o
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_17                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_18                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_19                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_2                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_20                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_21                                       main.o
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_22                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_23                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_24                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_25                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_26                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_27                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_28                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_29                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_3                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_30                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_31                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_32                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_33                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_34                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_4                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_5                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_6                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_7                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_8                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_9                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vector_default                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+__vectors                                         /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+_exit                                             /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_exit.o)
+command                                           main.o
+cur_pwm                                           main.o
+delay                                             main.o
+delay32us                                         main.o
+delay_cho                                         main.o
+delay_count                                       main.o
+delayms                                           main.o
+delayms_count                                     main.o
+empty                                             main.o
+exit                                              /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+fMicSample                                        main.o
+fSpeakerOut                                       main.o
+fcdsSample                                        main.o
+fnd_display                                       main.o
+ir_data                                           main.o
+ir_tran_data                                      main.o
+ir_trans_temp                                     main.o
+isr_pwm                                           main.o
+lcd_char_out                                      main.o
+lcd_init                                          main.o
+lcd_line_clr                                      main.o
+lcd_out                                           main.o
+lcd_port_init                                     main.o
+lcd_position                                      main.o
+lcd_shift                                         main.o
+lcd_str_out                                       main.o
+mSecDelay                                         main.o
+m_bMelodyEnd                                      main.o
+m_nPos_Speaker                                    main.o
+main                                              main.o
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm64.o
+nSensorVal                                        main.o
+number                                            main.o
+number_fnd                                        main.o
+org_pwm                                           main.o
+pK_                                               main.o
+pK_refrash                                        main.o
+pM_                                               main.o
+pM_refrash                                        main.o
+pwm_cnt                                           main.o
+pwm_cycle                                         main.o
+string1                                           main.o
+string2                                           main.o
+tempCounter                                       main.o
