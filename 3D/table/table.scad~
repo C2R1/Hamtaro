@@ -1,0 +1,42 @@
+use <tile.scad>
+
+$fn=200;
+
+module table()
+{
+    difference()
+    {
+        cube([1200,1200,10]);
+        for(x=[150:150:1200-2*150])
+            for(y=[0:150:1200-150])
+                for(xt=[20,130])
+                    for(yt=[20,130])
+                        translate([x+xt,y+yt,-1]) cylinder(r=5,h=12);
+    }
+    translate([150,0,400+10])
+    union()
+    {
+        difference()
+        {
+            cube([1200-2*150,1200,10]);
+            for(x=[0:150:1200-2*150])
+                for(y=[0:150:1200-150])
+                    for(xt=[20,130])
+                        for(yt=[20,130])
+                            translate([x+xt,y+yt,-1]) cylinder(r=5,h=12);
+        }
+        translate([1200-2*150,1200-150,0])
+        cube([150,150,10]);
+        translate([-150,0,0])
+        cube([150,150,10]);
+    }
+    translate([1200-150,150,0])
+    rotate([24.4,0,0])
+    cube([150,7*150-55,10]);
+    translate([0,150,408])
+    rotate([-24.4,0,0])
+    translate([0,-10,0])
+    cube([150,7*150-55,10]);
+}
+color("saddlebrown")
+table();
